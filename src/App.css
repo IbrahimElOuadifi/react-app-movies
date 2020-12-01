@@ -1,3 +1,142 @@
+body {
+  background-color: #333c4e;
+}
+
 .App {
   text-align: center;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+.nav ul li {
+  list-style: none;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.nav ul li:hover {
+  background-color: #0af;
+  color: #fff;
+}
+
+input:focus {
+  outline: none;
+}
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80%;
+  align-self: center;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.movie {
+  cursor: pointer;
+  position: relative;
+  width: 250px;
+  height: 420px;
+  margin: 2em 0.5em;
+  transition: all 0.3s ease-in-out;
+}
+
+.movie:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+.movie .info {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 55px;
+  bottom: 0;
+  background-color: #111;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.movie .info .title {
+  width: 80%;
+  text-align: start;
+  padding: 0 0 0 8px;
+  color: #fff;
+}
+
+.movie .info .rating {
+  width: 15%;
+  text-align: center;
+}
+
+.green {
+  color: #0f0;
+}
+
+.orange {
+  color: #fa0;
+}
+
+.red {
+  color: #f00;
+}
+
+.alert {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+  top: 0;
+  left: 0;
+}
+
+.popup h1 {
+  position: absolute;
+  top: 8px;
+  left: 18px;
+  color: #0af;
+  width: 50%;
+}
+
+.popup p {
+  position: absolute;
+  bottom: 16px;
+  left: 18px;
+  color: #fff;
+  width: 50%;
+}
+
+.popup img {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.popup .btn-danger {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 1;
 }
