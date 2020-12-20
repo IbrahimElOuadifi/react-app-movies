@@ -77,4 +77,4 @@ Movie api : https://api.themoviedb.org/3/movie/724989?api_key=
 
 IMG api : https://image.tmdb.org/t/p/w1280
 
-search api = https://api.themoviedb.org/3/search/movie?api_key={api_key}&query=Jack+Reacher
+search_api = https://api.themoviedb.org/3/search/movie?api_key={api_key}&query=Jack+Reacher
